@@ -1,0 +1,43 @@
+{
+  "host": {
+    "#mode": "--- 主机环境,0:线上;1:测试;2:开发 ---",
+    "mode": 0,
+    "#online": "--- 域名配置,online:线上环境域名,后面的test和dev分包代表测试和开发环境 ---",
+    "online": "https://3kfastapi.3k.com",
+    "test": "http://3kfastadmin-test.3kwan.com",
+    "dev": "http://3kfastadmin.demo.3kwan.com:82",
+    "#wx_developer": "--- 企业微信国内打包工具技术讨论群组消息接口 ---",
+    "wx_developer": "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=727cae3c-d2fc-42c4-98fc-399980bd8897",
+    "wx_tester": "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=617526fc-7d6c-49bb-8718-f2f65f74d6e8",
+    "#upyun": "--- 又拍云存储配置 ---",
+    "oss_service_name": "https://yxfile.3k.com",
+    "upyun_service": "yxupload",
+    "upyun_username": "sdk3k",
+    "upyun_password": "sdk3k123"
+  },
+  "#router:": "--- 项目目录配置除root_path外按默认即可 ---",
+  "router": {
+    "root_path": "",
+    "#log_path": "--- 落地日志存放路径 ---",
+    "log_path": "",
+    "assets_path": "/assets",
+    "workspace_path": "/workspace"
+  },
+  "db_cfg": {
+    "#": "--- 是否开启sqlite记录 ---",
+    "enable": false
+  },
+  "notify_wx_cfg": {
+    "#": "--- 是否开启企业微信消息推送 ---",
+    "dev_group_enable": false,
+    "test_group_enable": false
+  },
+  "log_cfg": {
+    "#": "--- 是否开启落地日志 ---",
+    "enable": false
+  },
+  "apktool232_cfg": {
+    "#": "--- 个别游戏需要用到特殊版本的apktool，直接加在下面，用英文逗号进行分格 ---",
+    "group_id": "49,130"
+  }
+}
